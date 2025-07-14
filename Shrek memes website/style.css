@@ -1,3 +1,21 @@
-body{
-    background-color: rgb(200, 155, 25);
+.hero-image  {
+    background-image: url("./Images (shrek)/cunning.jpg");
+    height: 1212px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
+.hero-text  {
+    color:#9b4100;
+    font-size: 200px;
+    position: absolute;
+    top: 150px;
+}
+h2  {
+    color:rgb(155, 65, 0);
+    font-size: 200px;
+    position: absolute;
+    top: 290px;
+}
+color:rgb(20, 155, 25);
