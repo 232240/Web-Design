@@ -1,6 +1,3 @@
-*  {
-    
-}
 .hero-image  {
     background-image: url("./images/cunning.jpg");
     height: 1212px;
@@ -39,5 +36,4 @@ img  {
     margin-right: 300px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: x-large;
-    
 }
