@@ -1,3 +1,6 @@
+*  {
+    font-family: 'Creepster';
+}
 .hero-image  {
     background-image: url("./Images (shrek)/cunning.jpg");
     height: 1212px;
@@ -16,6 +19,10 @@ h2  {
     color:rgb(155, 65, 0);
     font-size: 200px;
     position: absolute;
-    top: 290px;
+    top: 310px;
+    left: 100px;
 }
-color:rgb(20, 155, 25);
+.two-column  {
+    diplay: grid;
+    grid-template-columns: 1fr 1fr;
+}
