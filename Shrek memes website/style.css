@@ -13,9 +13,10 @@
     position: absolute;
     top: 150px;
 }
-h2  {
+.hero-text2  {
     color:rgb(155, 65, 0);
     font-size: 200px;
+    font-family: 'Creepster';
     position: absolute;
     top: 310px;
     left: 100px;
@@ -24,6 +25,8 @@ h2  {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
+    margin: auto;
+    margin-top: 40px;
 }
 
 img  {
@@ -36,4 +39,21 @@ img  {
     margin-right: 300px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: x-large;
+}
+
+.three-column  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    width: 10%;
+    margin: auto;
+    margin-top: 40px;
+}
+.card  {
+    background-color: #9b4100;
+}
+
+.card-text  {
+    text-align: center;
+    color:rgb(75, 160, 25)
 }

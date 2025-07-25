@@ -1,0 +1,21 @@
+.hero-image  {
+    background-image: url("./crimages/hero-image-byGooglePlay.jpg");
+    height: 1280px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+}
+
+.hero-text  {
+    text-align: center;
+    font-size: 70px;
+    margin-top: 170px;
+    margin-bottom: auto;
+    color: #ffd700;
+    font-family: 'Oswald';
+}
+
+.blue  {
+    background: linear-gradient(to bottom, #325DD5, #264DBC, #1A3DA3);
+    overflow: hidden;
+}
