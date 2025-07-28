@@ -19,3 +19,41 @@
     background: linear-gradient(to bottom, #325DD5, #264DBC, #1A3DA3);
     overflow: hidden;
 }
+
+.sub  {
+    text-align: center;
+    color: #ffd700;
+    font-family: 'Poiret One';
+    font-size: xx-large;
+    margin-top: 1000px;
+    margin-bottom: 20px;
+}
+
+.sites  {
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: auto;
+    background: linear-gradient(to right, #271DA9, #271DA9, #DC2626, #DC2626);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-family: 'Oswald';
+}
+
+.sites-imgs  {
+    width: 640px;
+}
+
+.officialsite  {
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: auto;
+    color: #271DA9;
+    font-family: 'Oswald';
+}
+
+.sites-info  {
+    background: linear-gradient(to bottom, #F3E8D6, #FFD700, #F5E380);
+    overflow: hidden;
+}
