@@ -41,28 +41,43 @@
     font-family: 'Oswald';
 }
 
-.logo-container {
+.logo-container1 {
     display: flex;
+    margin-right: 800px;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.logo-container2 {
+    display: flex;
+    margin-left: 800px;
+    flex-direction: column;
+    align-items: center;
     margin-top: 40px;
 }
   
 .logo {
+    margin-top: 20px;
     width: 240px;
 }
   
-.officialsite {
-    background: transparent;
+.links {
     font-size: 20px;
-    color: #271DA9;
     font-family: 'Bungee';
+    margin-top: 5px;
+    display: inline-block;
+    background: #325DD5;
+    color: #FFD700;
+    padding: 10px 20px;
+    border-radius: 8px;
     text-decoration: none;
-    margin-top: 10px;
 }
+
+
   
 
-.helpful-sites  {
+.sites-and-info  {
     background: linear-gradient(to bottom, #F3E8D6, #FFD700, #F5E380);
     overflow: hidden;
 }
