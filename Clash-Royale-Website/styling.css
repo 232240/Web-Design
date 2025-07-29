@@ -41,19 +41,22 @@
     font-family: 'Oswald';
 }
 
-.sites-imgs  {
-    width: 640px;
+.logo  {
+    width: 240px;
+    margin-left: 500px
 }
 
 .officialsite  {
+    background: transparent;
     text-align: center;
-    font-size: 70px;
-    margin-bottom: auto;
+    font-size: 20px;
+    margin: 0px 0px 0px 450px;
     color: #271DA9;
-    font-family: 'Oswald';
+    font-family: 'Bungee';
+    text-decoration: none;
 }
 
-.sites-info  {
+.helpful-sites  {
     background: linear-gradient(to bottom, #F3E8D6, #FFD700, #F5E380);
     overflow: hidden;
 }
