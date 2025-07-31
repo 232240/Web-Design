@@ -41,20 +41,26 @@
     font-family: 'Oswald';
 }
 
+.sites-wrapper  {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start
+}
+
 .logo-container1 {
     display: flex;
-    margin-right: 800px;
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
+    margin-left: 300px;
 }
 
 .logo-container2 {
     display: flex;
-    margin-left: 800px;
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
+    margin-right: 300px;
 }
   
 .logo {
