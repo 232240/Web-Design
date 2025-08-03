@@ -41,6 +41,44 @@
     font-family: 'Oswald';
 }
 
+.paragraph-heading1  {
+    font-family: 'Oswald';
+    color: #0058DD;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.paragraph-heading2  {
+    font-family: 'Oswald';
+    color: #EA7D00;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.paragraph-heading3  {
+    font-family: 'Oswald';
+    color: #7F00BA;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.paragraph-heading4  {
+    font-family: 'Oswald';
+    background: linear-gradient(to right, #00BF56 35%, #8D6BD2 47%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.paragraph {
+    font-size: 25px;
+    font-family: 'Open Sans';
+    margin: 0 50px 0 50px;
+    color: #1E3A8A;
+}
 
 .sites-wrapper  {
     display: flex;
@@ -67,6 +105,7 @@
 .logo {
     margin-top: 20px;
     width: 240px;
+    max-height: 300px;
 }
   
 .links {
