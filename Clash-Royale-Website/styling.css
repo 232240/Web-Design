@@ -62,20 +62,34 @@
     margin-left: 50px;
 }
 
-.paragraph-heading4  {
+.gradient-text  {
     font-family: 'Oswald';
-    background: linear-gradient(to right, #00BF56 35%, #8D6BD2 47%);
+    background: linear-gradient(to right, #00BF56 1%, #8D6BD2 100%, #8D6BD2 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
     font-size: 30px;
-    margin-left: 50px;
 }
 
+.gradient-text2  {
+    font-family: 'Oswald';
+    background: linear-gradient(to right, #FF9D00 0%, #FF9D00 48%, #C07700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 30px;
+}
+
+.emoji  {
+    font-size: 30px;
+    padding-left: 50px;
+}
 .paragraph {
     font-size: 25px;
     font-family: 'Open Sans';
+    font-weight: bolder;
     margin: 0 50px 0 50px;
     color: #1E3A8A;
 }
