@@ -1,9 +1,13 @@
+img  {
+    border-radius: 10px;
+}
+
 .hero-image  {
     background-image: url("./crimages/hero-image-byGooglePlay.jpg");
     height: 1280px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 75%;
+    background-size: 95%;
 }
 
 .hero-text  {
@@ -25,7 +29,7 @@
     color: #ffd700;
     font-family: 'Poiret One';
     font-size: xx-large;
-    margin-top: 1000px;
+    margin-top: 1100px;
     margin-bottom: 20px;
 }
 
@@ -132,8 +136,29 @@
     padding: 10px 20px;
     border-radius: 8px;
     text-decoration: none;
+    box-shadow: 0 5px 0 #1A3DA3;
+    transition: all 0.15s ease-in-out;
+    position: relative;
+    top: 0;
 }
 
+.links:hover {
+    background: linear-gradient(90deg, #48c6ef, #6f86d6);
+    transform: scale(1.05);
+}
+
+.links:active {
+    top: 4px;
+    box-shadow: 0 1px 0 #1A3DA3;
+    transform: scale(0.97);
+}
+
+link:hover {
+    background: linear-gradient(90deg, #48c6ef, #6f86d6);
+    transform: scale(1.03);
+    transition: all 0.4s ease;
+  }
+  
 
   
 
