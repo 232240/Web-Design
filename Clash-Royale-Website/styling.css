@@ -37,7 +37,19 @@ img  {
     text-align: center;
     font-size: 70px;
     margin-bottom: auto;
-    background: linear-gradient(to right, #271DA9 47%, #DC2626 53%);
+    background: linear-gradient(to right, #102fb8 47%, #DC2626 53%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-family: 'Oswald';
+}
+
+.search  {
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: auto;
+    background: linear-gradient(to right, #0c1b5e 47%, #ac1e1e 53%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -49,15 +61,13 @@ img  {
     font-family: 'Oswald';
     color: #0058DD;
     font-size: 30px;
-    margin-left: 50px;
-}
+    margin-left: 50px;}
 
 .paragraph-heading2  {
     font-family: 'Oswald';
     color: #EA7D00;
     font-size: 30px;
-    margin-left: 50px;
-}
+    margin-left: 50px;}
 
 .paragraph-heading3  {
     font-family: 'Oswald';
@@ -86,15 +96,23 @@ img  {
     font-size: 30px;
 }
 
+.info-text  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .emoji  {
     font-size: 30px;
     padding-left: 50px;
 }
+
 .paragraph {
     font-size: 25px;
     font-family: 'Open Sans';
     font-weight: bolder;
-    margin: 0 50px 0 50px;
+    word-spacing: 5px;
+    margin: 0 300px 0 300px;
     color: #1E3A8A;
 }
 
@@ -181,35 +199,20 @@ link:hover {
   }
   
   #search-results {
-    display: none;              /* 👈 hidden by default */
-    max-height: 400px;
-    overflow-y: auto;
-    margin: 20px auto 0;
-    padding: 1rem;
-    width: 80%;
-    background: rgba(20, 20, 40, 0.9); /* dark royal blue background */
-    color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: none; max-height: 400px; overflow-y: auto;
+    margin: 20px auto 0; padding: 1rem; width: 80%;
+    background: rgba(20,20,40,0.9); color: #fff;
+    border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     text-align: left;
+    font-family: 'Oswald';
   }
   
   .result-item {
-    padding: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.2);
   }
   
-  .result-item:last-child {
-    border-bottom: none;
-  }
+  .result-item:last-child { border-bottom: none; }
   
-  .result-item h3 {
-    margin: 0;
-    font-size: 18px;
-    color: #ffd700; /* gold */
-  }
+  .result-item h3 { margin: 0; font-size: 18px; color: #ffd700; }
   
-  .result-item p {
-    margin: 4px 0;
-    font-size: 14px;
-  }  
+  .result-item p { margin: 4px 0; font-size: 14px; }
