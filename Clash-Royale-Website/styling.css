@@ -201,7 +201,7 @@ link:hover {
   #search-results {
     display: none; max-height: 400px; overflow-y: auto;
     margin: 20px auto 0; padding: 1rem; width: 80%;
-    background: rgba(20,20,40,0.9); color: #fff;
+    background: rgba(20, 20, 40, 0.623); color: #fff;
     border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     text-align: left;
     font-family: 'Oswald';
