@@ -83,13 +83,6 @@ body {
     font-size: 30px;
     text-align: center;}
 
-.paragraph-heading4  {
-    text-align: center;}
-
-.paragraph-heading5  {
-    text-align: center;}
-
-
 .gradient-text  {
     font-family: 'Oswald';
     background: linear-gradient(to right, #00BF56 1%, #8D6BD2 100%, #8D6BD2 100%);
@@ -101,7 +94,6 @@ body {
 }
 
 .gradient-text2  {
-    display: flex;
     font-family: 'Oswald';
     background: linear-gradient(to right, #FF9D00 0%, #FF9D00 48%, #C07700 100%);
     -webkit-background-clip: text;
@@ -118,9 +110,9 @@ body {
 }
 
 .emoji  {
-    font-family: 'Oswald';
     font-size: 30px;
-    text-align: center;}
+    padding-left: 50px;
+}
 
 .paragraph {
     font-size: 25px;
