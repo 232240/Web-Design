@@ -83,16 +83,6 @@ body {
     font-size: 30px;
     text-align: center;}
 
-.paragraph-heading4  {
-    display: flex;
-    flex-direction: column;
-    align-items: normal;}
-
-.paragraph-heading5  {
-    display: flex;
-    flex-direction: column;
-    align-items: normal;}
-
 .gradient-text  {
     font-family: 'Oswald';
     background: linear-gradient(to right, #00BF56 1%, #8D6BD2 100%, #8D6BD2 100%);
@@ -116,7 +106,7 @@ body {
 .info-text  {
     display: flex;
     flex-direction: column;
-    align-items: normal;
+    align-items: center;
 }
 
 .emoji  {
