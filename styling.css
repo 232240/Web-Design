@@ -69,19 +69,20 @@ body {
     font-family: 'Oswald';
     color: #0058DD;
     font-size: 30px;
-    text-align: center;}
+    margin-left: 50px;}
 
 .paragraph-heading2  {
     font-family: 'Oswald';
     color: #EA7D00;
     font-size: 30px;
-    text-align: center;}
+    margin-left: 50px;}
 
 .paragraph-heading3  {
     font-family: 'Oswald';
     color: #7F00BA;
     font-size: 30px;
-    text-align: center;}
+    margin-left: 50px;
+}
 
 .gradient-text  {
     font-family: 'Oswald';
