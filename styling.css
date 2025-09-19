@@ -5,10 +5,9 @@ img  {
 body {
   margin: 0;
   padding: 0;
-  width: 1980x;
+  width: 1366px;
   margin: 0 auto;
 }
-
 
 .hero-image  {
     background-image: url("./crimages/hero-image-byGooglePlay.jpg");
