@@ -13,7 +13,7 @@ async function setupCardSearch() {
     building: 'https://royaleapi.github.io/cr-api-data/json/cards_stats_building.json'
   };
 
-  // Make the input all lowercase
+  // Utility: normalize keys for matching between files
   function normalizeKey(obj) {
     if (!obj) return '';
     if (obj.key) return String(obj.key).toLowerCase();
@@ -22,13 +22,14 @@ async function setupCardSearch() {
     return '';
   }
 
-  // Get value at specified level
+  // Utility: safely get stat value at level index
   function statAtLevel(statsObj, possibleKeys, lvlIndex) {
     if (!statsObj) return null;
     for (const k of possibleKeys) {
       if (k in statsObj && statsObj[k] != null) {
         const v = statsObj[k];
         if (Array.isArray(v)) {
+          // prefer requested index, else fallback to last element
           return v[lvlIndex] ?? v[v.length - 1];
         } else {
           return v; // scalar
@@ -51,7 +52,7 @@ async function setupCardSearch() {
 
     CARDS = Array.isArray(cards) ? cards : [];
 
-
+    // merge stats arrays into map
     [troops, spells, buildings].forEach(arr => {
       if (!Array.isArray(arr)) return;
       arr.forEach(s => {
@@ -67,7 +68,7 @@ async function setupCardSearch() {
     return;
   }
 
- 
+  // Enter-to-search handler
   input.addEventListener("keydown", function (e) {
     if (e.key !== "Enter") return;
     const q = this.value.trim().toLowerCase();
@@ -83,7 +84,7 @@ async function setupCardSearch() {
       const nameMatch = card.name && card.name.toLowerCase().includes(q);
       const k = normalizeKey(card);
       const keyMatch = k && k.includes(q);
-      return (nameMatch || keyMatch) && STATS_MAP.has(k); // filter out test/fake cards
+      return (nameMatch || keyMatch) && STATS_MAP.has(k); // ensure we have stats (filters out test/fake cards)
     });
 
     if (matches.length === 0) {
@@ -92,18 +93,24 @@ async function setupCardSearch() {
       return;
     }
 
-    // Limit results to first 10 matches to keep it tidy
+    // Limit results to first 10 matches to keep UI tidy
     const show = matches.slice(0, 10);
 
     show.forEach(card => {
       const k = normalizeKey(card);
       const stats = STATS_MAP.get(k);
 
-      // Determine level index
+      // Determine level index: spells often show level 9 in-game (index 8), troops/buildings use level 11 (index 10)
       const typeLower = (card.type || "").toString().toLowerCase();
       const levelIndex = typeLower.includes("spell") ? 8 : 10;
 
-     
+      // Try multiple possible key names for hp/dmg/dps until first match
+      const hp = statAtLevel(stats, ['hitpoints', 'shieldHitpoints', 'spawnHealth', 'hit_points'], levelIndex);
+      const dmg = statAtLevel(stats, ['damage', 'damage_per_hit', 'damagePerHit', 'area_damage', 'areaDamage'], levelIndex);
+      const dps = statAtLevel(stats, ['dps', 'damagePerSecond', 'damage_per_second'], levelIndex);
+
+      // Some spells have 'crownTowerDamage' or 'tower_damage' instead
+      const towerDmg = statAtLevel(stats, ['crown_tower_damage', 'crownTowerDamage', 'tower_damage'], levelIndex);
 
       // Build result HTML (only show fields that exist)
       const parts = [];
