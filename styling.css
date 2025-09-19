@@ -101,6 +101,7 @@ body {
     background-clip: text;
     color: transparent;
     font-size: 30px;
+    text-align: center;
 }
 
 .info-text  {
@@ -110,9 +111,9 @@ body {
 }
 
 .emoji  {
+    font-family: 'Oswald';
     font-size: 30px;
-    padding-left: 50px;
-}
+    text-align: center;}
 
 .paragraph {
     font-size: 25px;
