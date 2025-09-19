@@ -94,6 +94,7 @@ body {
 }
 
 .gradient-text2  {
+    display: flex;
     font-family: 'Oswald';
     background: linear-gradient(to right, #FF9D00 0%, #FF9D00 48%, #C07700 100%);
     -webkit-background-clip: text;
