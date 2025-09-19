@@ -132,7 +132,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
-    margin-left: 300px;
+    margin-left: 350px;
 }
 
 .logo-container2 {
@@ -140,13 +140,13 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
-    margin-right: 300px;
+    margin-right: 350px;
 }
   
 .logo {
     margin-top: 20px;
     width: 240px;
-    max-height: 300px;
+    max-height: 350px;
 }
   
 .links {
